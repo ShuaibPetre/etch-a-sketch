@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,30 +12,39 @@
 <body>
     <div class="background">
         <div class="container">
-            <div class="heading">
+            <div class="title">
                 ETCH-A-SKETCH
             </div>
+            <p>Mouse over the grid to draw. You can hold <i>Control</i>
+                to drop drawing while the button is down.</p>
     
             <div class="choices">
-                <div class="colorbtn">
-                    <button id="rainbow">Rainbow</button>
-                    <button id="random">Random</button>
-                    <button id="white">White</button>
-                    <button id="black">Black</button>
-                    
+                <div class="colorbuttons">
+                    <button class="colorbtn" id="rainbow">Rainbow</button>
+                    <button class="colorbtn" id="random">Random</button> 
                 </div>
-                <div class="sizebtn">
-                    <button id="size1">10x10</button>
-                    <button id="size2">30x30</button>
-                    <button id="size3">50x50</button>
-                    <button id="size4">100x100</button>
+                <div class="sizebuttons">
+                    <button class="sizebtn" id="size1">10x10</button>
+                    <button class="sizebtn" id="size2">30x30</button>
+                    <button class="sizebtn" id="size3">50x50</button>
+                    <button class="sizebtn" id="size4">100x100</button>
                 </div>
-                <div class="colorbtn">
-                       
-                    <button id="clear">Clear</button>
-                </div>
-                         
+                <div class="colorbuttons">
+                    <button class="colorbtn" id="white">White</button>
+                    <button class="colorbtn" id="black">Black</button> 
+                </div>                                
             </div>
+            <div class="extrabuttons">
+                <div class="extrab1">
+                    <input id = "colorInput" type = "color">
+                    <label>Pen!</label>
+                </div>
+                <button id="clear">Clear</button>
+                <div class="extrab1">
+                    <label>Background!</label>
+                    <input id = "colorInput1" type = "color">
+                </div>
+            </div>            
             <div id="grid">
     
             </div>
